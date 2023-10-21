@@ -4,6 +4,16 @@ List <String> fruits = new List <String> ();
 //declare a string list and add the fruits to the list
 List<String> fruitList = new List <String> {'pear', 'apple', strawberry'};
 
+//using for loop syntax, loop over the list of strings
+/*for (data_type variable_name : list_name or set_name){
+    // Loop body
+}
+*/
+
+for (String fruit: fruitList)  {
+  System.debug (fruit);
+}
+
 //add a fruit to the list using the add method
 fruitList.add('blueberry');
 
