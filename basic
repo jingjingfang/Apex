@@ -1,0 +1,20 @@
+//Declare a list
+List <String> fruits = new List <String> ();
+
+//declare a string list and add the fruits to the list
+List<String> fruitList = new List <String> {'pear', 'apple', strawberry'};
+
+//add a fruit to the list using the add method
+fruitList.add('blueberry');
+
+//check the size of the fruit list
+fruitList.size();
+
+
+//write a SOQL query to receive opportunity records from Salesforce
+List<Opportunity> recentWonOpp = [SELECT ID, Name, Amount FROM Opportunity WHERE IsCLOSE =TRUE ORDER BY DESC LIMIT 1];
+
+
+
+
+
