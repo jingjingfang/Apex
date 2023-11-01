@@ -25,6 +25,16 @@ fruitList.size();
 List<Opportunity> recentWonOpp = [SELECT ID, Name, Amount FROM Opportunity WHERE IsCLOSE =TRUE ORDER BY DESC LIMIT 1];
 
 
+/* create a class that has a method accepting two strings. The method searches for contacts that have a last name matching the first string and a mailing postal code 
+(API name: MailingPostalCode) matching the second. It gets the ID and Name of those contacts and returns them. */
+
+public class ContactSearch {
+        public static List<Contact> searchForContacts(String lastName, String mailingPostalCode) {
+            return [SELECT Id, Name, LastName, MailingPostalCode
+                                     FROM Contact
+                                     WHERE LastName = :lastName AND MailingPostalCode = :mailingPostalCode];
+        }   
+    }
 
 
 
