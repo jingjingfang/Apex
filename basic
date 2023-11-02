@@ -1,8 +1,35 @@
-//Declare a list
-List <String> fruits = new List <String> ();
+//Declare a list: List<DataType> listName = new List<DataType>();
 
-//declare a string list and add the fruits to the list
+//You can have duplicate elements in a list.
+
+List <String> fruits = new List <String> ();
+System.debug(fruites);
+
+//method 1: add elements to a list after it has been created 
+List<String> fruitList = new List <String>();
+fruitList.add('orange');
+
+//method 2: declare a string list and add the elements to the list or create a list of fruits
 List<String> fruitList = new List <String> {'pear', 'apple', strawberry'};
+
+//use the get method to get the value at index 2
+System.debug('The index 3 value is " + fruitList.get(2));
+
+//remove an element
+fruitList.remove(2);
+
+// iterate over alist to read elements
+for (Integer i=0; i<fruitList.size();i++){
+    System.debug(fruitList[i]);
+------------------------------------------------------------------------------------------------------
+//Declare an array variable;
+Account [] accs;
+
+
+//Declare an array of string
+String [] groceies = new String [4];
+
+-------------------------------------------------------------------------------------------------------------
 
 //using for loop syntax, loop over the list of strings
 /*for (data_type variable_name : list_name or set_name){
@@ -36,5 +63,9 @@ public class ContactSearch {
         }   
     }
 
+
+---------------------------------------------------------------------------------
+//Declare a new varaible acct to a sObject
+Account acct = new Account ();
 
 
