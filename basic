@@ -51,6 +51,17 @@ fruitList.size();
 //write a SOQL query to receive opportunity records from Salesforce
 List<Opportunity> recentWonOpp = [SELECT ID, Name, Amount FROM Opportunity WHERE IsCLOSE =TRUE ORDER BY DESC LIMIT 1];
 
+---------------------------------------------------------------------------------------------------------------------------------
+//Declare a new varaible acct to a sObject
+Account acct = new Account ();
+
+---------------------------------------------------------------------------------
+//Apex Class: serves as a template
+
+/*define a class: access modifier such as public or global + key work class +class name
+Access Modifiers: Apex classes use access modifiers to control the visibility of fields and methods. 
+Public access grants visibility across all classes, while private access restricts visibility within the same class.*/
+
 
 /* create a class that has a method accepting two strings. The method searches for contacts that have a last name matching the first string and a mailing postal code 
 (API name: MailingPostalCode) matching the second. It gets the ID and Name of those contacts and returns them. */
@@ -63,9 +74,8 @@ public class ContactSearch {
         }   
     }
 
+//Apex method 
 
----------------------------------------------------------------------------------
-//Declare a new varaible acct to a sObject
-Account acct = new Account ();
+
 
 
