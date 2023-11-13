@@ -22,6 +22,25 @@ fruitList.remove(2);
 for (Integer i=0; i<fruitList.size();i++){
     System.debug(fruitList[i]);
 ------------------------------------------------------------------------------------------------------
+
+//Declare a set using a "Set" keyword
+Set<String> myStringSet = new Set<String>();
+myStringSet.add(1);
+myStringSet.add(3);
+
+//Initialize a new set with two element
+Set <String> stringSet = new Set<String> {'element1', 'element2'};  //use curly braces {} instead of parentheses () to define the initial elements of the set. 
+
+--------------------------------------------------------------------------------------------------------
+// A map is a collection of key-value pairs where each unique key maps to a specific value. Maps are implemented using the Map keyword
+//Declare a  map with string key and integer values
+ Map<String, Integer> mapName = new Map <String, Integer> ();
+
+//Initialize a map with key-value pairs directly
+Map<String, Integer> myMap = new Map<String, Integer> {'key'= 10, 'key'= 20}; //use curly braces {} instead of parentheses () to define the initial map. 
+
+
+-------------------------------------------------------------------------------------------------------------------
 //Declare an array variable;
 Account [] accs;
 
