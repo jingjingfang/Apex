@@ -96,5 +96,13 @@ public class ContactSearch {
 //Apex method 
 
 
+//BULK DML
 
+List<Contact> contList=new List<Contact>{
+new Contact(FirstName ='Joe', LastName='Smith'),
+new Contact(FirstName ='Jack', LastName ='Joe')
+};
+
+//insert contList
+insert contList;
 
