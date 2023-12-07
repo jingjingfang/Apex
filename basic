@@ -47,10 +47,15 @@ Map<String, Integer> myMap = new Map<String, Integer> {'key'= 10, 'key'= 20}; //
 Account [] accs;
 
 
-//Declare an array of string
+//declares that the variable groceries is an array of strings and creates a new array of strings with a size of 4. 
 String [] groceies = new String [4];
 
 -------------------------------------------------------------------------------------------------------------
+//define an integer list and create a new array of integers with a size of 6
+
+List<Integer> ints = new Integer[6];
+
+__________________________________________________________________________________________________________
 
 //using for loop syntax, loop over the list of strings
 /*for (data_type variable_name : list_name or set_name){
