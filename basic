@@ -2,6 +2,8 @@
 
 //You can have duplicate elements in a list.
 
+List<Integer>myList = new List<Integer>();
+
 List <String> fruits = new List <String> ();
 System.debug(fruites);
 
